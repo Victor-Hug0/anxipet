@@ -26,11 +26,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: 'hsl(var(--primary))', // #FC8464
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: 'hsl(var(--secondary))', // #d4b493
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
@@ -38,11 +38,11 @@ export default {
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: 'hsl(var(--muted))', // #adb6b4
+					foreground: 'hsl(var(--muted-foreground))' // #676058
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
+					DEFAULT: 'hsl(var(--accent))', // #ffe8d4
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
@@ -72,6 +72,11 @@ export default {
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
+			},
+			fontFamily: {
+				sans: ['DM Sans', 'Inter', 'sans-serif'],
+				roboto: ['Roboto', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif'],
 			}
 		}
 	},

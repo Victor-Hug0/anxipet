@@ -5,31 +5,31 @@
 
 @layer base {
   :root {
-    --background: 210 29% 24%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 210 29% 24%;
 
-    --card: 210 29% 24%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 24%;
 
-    --popover: 210 29% 24%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 24%;
 
     --primary: 14 100% 70%;
-    --primary-foreground: 210 29% 24%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 24% 32%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 25 31% 73%;
+    --secondary-foreground: 210 29% 24%;
 
-    --muted: 210 24% 32%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 166 10% 70%;
+    --muted-foreground: 30 6% 40%;
 
-    --accent: 14 100% 75%;
-    --accent-foreground: 210 29% 24%;
+    --accent: 36 100% 94%;
+    --accent-foreground: 30 6% 40%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 210 24% 32%;
+    --border: 0 0% 89%;
     --input: 214.3 31.8% 91.4%;
     --ring: 14 100% 70%;
 
@@ -38,7 +38,11 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'Inter', sans-serif;
   }
 }
 
@@ -52,11 +56,11 @@
   }
   
   .input-field {
-    @apply bg-secondary/50 border border-border rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-primary;
+    @apply bg-background border border-border rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-primary;
   }
   
   .checkbox-custom {
-    @apply w-4 h-4 border border-border rounded bg-secondary/50 checked:bg-primary checked:border-primary focus:outline-none focus:ring-2 focus:ring-primary;
+    @apply w-4 h-4 border border-border rounded bg-background checked:bg-primary checked:border-primary focus:outline-none focus:ring-2 focus:ring-primary;
   }
   
   .link {

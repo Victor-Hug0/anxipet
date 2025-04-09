@@ -21,7 +21,7 @@ const BackButton: React.FC<BackButtonProps> = ({ to }) => {
   return (
     <button 
       onClick={handleClick}
-      className="p-2 text-primary hover:text-primary/80 transition-colors"
+      className="p-2 text-[#2e3840] hover:text-[#676058] transition-colors"
       aria-label="Voltar"
     >
       <ArrowLeft size={20} />
