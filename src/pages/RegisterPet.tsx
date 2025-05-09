@@ -16,11 +16,7 @@ const RegisterPet = () => {
       description: "Bem-vindo(a) à Anxi Pet!",
     });
     // Aqui poderia ter lógica para ir para home
-<<<<<<< HEAD
-    navigate('/produtos');
-=======
     navigate('/login');
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
   };
 
   return (
@@ -87,11 +83,7 @@ const RegisterPet = () => {
             </div>
           </div>
           
-<<<<<<< HEAD
-          <button type="submit" className="w-full btn-primary bg-accent">
-=======
           <button type="submit" className="w-full btn-primary bg-[#2e3840]">
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
             Finalizar
           </button>
         </form>

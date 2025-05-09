@@ -15,11 +15,8 @@ const productMock = {
   image: '/placeholder.svg',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   ingredients: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-<<<<<<< HEAD
-=======
   specialistName: 'Nome do especialista',
   specialistComment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
   inStock: true,
   installments: 10
 };
@@ -101,15 +98,12 @@ const ProductDetail = () => {
               <h2 className="text-sm font-medium mb-2">Composição de ingredientes</h2>
               <p className="text-xs text-muted-foreground">{product.ingredients}</p>
             </div>
-<<<<<<< HEAD
-=======
 
             <div>
               <h2 className="text-sm font-medium mb-2">Comentário de especialista</h2>
               <h2 className="text-sm font-medium mb-2">Nome: {product.specialistName}</h2>
               <p className="text-xs text-muted-foreground">{product.specialistComment}</p>
             </div>
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
           </div>
         </div>
         

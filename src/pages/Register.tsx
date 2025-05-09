@@ -3,18 +3,11 @@ import React from 'react';
 import BackButton from '../components/BackButton';
 import Logo from '../components/Logo';
 import { useToast } from '@/components/ui/use-toast';
-<<<<<<< HEAD
-
-const Register = () => {
-  const { toast } = useToast();
-  
-=======
 import { Link } from 'react-router-dom';
 
 const Register = () => {
   const { toast } = useToast();
 
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
@@ -33,86 +26,49 @@ const Register = () => {
             <Logo size="md" />
           </div>
         </div>
-<<<<<<< HEAD
-        
-        <h1 className="text-xl font-bold text-center mb-6">Perfil do proprietário</h1>
-        
-=======
 
         <h1 className="text-xl font-bold text-center mb-6">Perfil do proprietário</h1>
 
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="fullName" className="block text-sm font-medium mb-2">
               Nome completo:
             </label>
-<<<<<<< HEAD
-            <input 
-=======
             <input
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
               id="fullName"
               type="text"
               className="input-field"
               required
             />
           </div>
-<<<<<<< HEAD
-          
-=======
-
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
           <div>
             <label htmlFor="birthDate" className="block text-sm font-medium mb-2">
               Data de nascimento:
             </label>
-<<<<<<< HEAD
-            <input 
-=======
             <input
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
               id="birthDate"
               type="date"
               className="input-field"
               required
             />
           </div>
-<<<<<<< HEAD
-          
-=======
-
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
           <div>
             <label htmlFor="phone" className="block text-sm font-medium mb-2">
               Telefone:
             </label>
-<<<<<<< HEAD
-            <input 
-=======
             <input
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
               id="phone"
               type="tel"
               className="input-field"
               required
             />
           </div>
-<<<<<<< HEAD
-          
-          <button type="submit" className="w-full btn-primary bg-accent">
-            Continuar
-          </button>
-        </form>
-        
-=======
 
           <div className="w-full btn-primary bg-[#2e3840] p-0">
             <Link to={"/cadastro/endereco"} className='block px-4 py-2 text-center'>Continuar</Link>
           </div>
         </form>
 
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
         <div className="mt-4 text-center text-sm">
           <p>
             Já possui uma conta? <a href="/login" className="link">Entrar</a>

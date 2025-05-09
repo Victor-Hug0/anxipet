@@ -13,10 +13,7 @@ const Login = () => {
       title: "Login efetuado com sucesso!",
       description: "Redirecionando para a página inicial...",
     });
-<<<<<<< HEAD
     // Aqui adicionaríamos a lógica de autenticação
-=======
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
   };
 
   return (
@@ -52,18 +49,11 @@ const Login = () => {
               required
             />
           </div>
-<<<<<<< HEAD
-          
-          <button type="submit" className="w-full btn-primary bg-accent">
-            Entrar
-          </button>
-=======
 
           <div className="w-full btn-primary bg-[#2e3840] p-0">
             <Link to={"/"} className='block px-4 py-2 text-center'>Entrar</Link>
           </div>
           
->>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
         </form>
         
         <div className="mt-4 text-center text-sm">
