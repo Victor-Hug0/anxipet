@@ -3,6 +3,10 @@ import React from 'react';
 import BackButton from '../components/BackButton';
 import Logo from '../components/Logo';
 import { useToast } from '@/components/ui/use-toast';
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
 
 const RegisterAddress = () => {
   const { toast } = useToast();
@@ -106,9 +110,15 @@ const RegisterAddress = () => {
             </div>
           </div>
           
+<<<<<<< HEAD
           <button type="submit" className="w-full btn-primary bg-accent">
             Continuar
           </button>
+=======
+          <div className="w-full btn-primary bg-[#2e3840] p-0">
+            <Link to={"/cadastro/pet"} className='block px-4 py-2 text-center'>Continuar</Link>
+          </div>
+>>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
         </form>
         
         <div className="mt-4 text-center text-sm">

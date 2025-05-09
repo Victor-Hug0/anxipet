@@ -43,8 +43,13 @@ const AnxiFilma = () => {
         <div className="bg-card rounded-lg overflow-hidden mb-6">
           <video
             controls
+<<<<<<< HEAD
             className="w-full h-auto"
             poster="public/lovable-uploads/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png"
+=======
+            className="w-full h-[720px]"
+            poster="public/placeholder.svg"
+>>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
           >
             <source src="" type="video/mp4" />
             Seu navegador não suporta o elemento de vídeo.

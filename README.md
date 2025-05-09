@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your Lovable project
 
 ## Project info
@@ -14,6 +15,8 @@ Simply visit the [Lovable Project](https://lovable.dev/projects/863defce-13cb-42
 
 Changes made via Lovable will be committed automatically to this repo.
 
+=======
+>>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
@@ -36,6 +39,7 @@ npm i
 npm run dev
 ```
 
+<<<<<<< HEAD
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).
@@ -49,6 +53,8 @@ npm run dev
 - Select the "Codespaces" tab.
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
+=======
+>>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
 
 ## What technologies are used for this project?
 
@@ -60,6 +66,7 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+<<<<<<< HEAD
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/863defce-13cb-42d7-8782-2afcd17e4a96) and click on Share -> Publish.
@@ -71,3 +78,6 @@ Yes it is!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+=======
+
+>>>>>>> e1c5dfecdf0afac2e0c16496cd3f3d2a92177dd9
