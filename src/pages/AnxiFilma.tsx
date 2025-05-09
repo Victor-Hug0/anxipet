@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const videosMock = Array.from({ length: 8 }).map((_, index) => ({
   id: index + 1,
   title: `Dicas para cuidar do seu pet ${index + 1}`,
-  thumbnail: "public/lovable-uploads/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png",
+  thumbnail: "public/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png",
   views: Math.floor(Math.random() * 10000)
 }));
 
@@ -44,7 +44,7 @@ const AnxiFilma = () => {
           <video
             controls
             className="w-full h-auto"
-            poster="public/lovable-uploads/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png"
+            poster="public/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png"
           >
             <source src="" type="video/mp4" />
             Seu navegador não suporta o elemento de vídeo.

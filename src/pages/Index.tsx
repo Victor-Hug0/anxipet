@@ -35,13 +35,13 @@ const featuredVideos = [
   {
     id: 1,
     title: 'Como escolher a melhor ração para seu pet',
-    thumbnail: "public/lovable-uploads/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png",
+    thumbnail: "public/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png",
     duration: '5:23',
   },
   {
     id: 2,
     title: 'Dicas de cuidados para filhotes',
-    thumbnail: "public/lovable-uploads/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png",
+    thumbnail: "public/7b25dd41-b19e-45c3-aeb0-0175d0c1168e.png",
     duration: '4:15',
   },
 ];
