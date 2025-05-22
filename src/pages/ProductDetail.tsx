@@ -5,6 +5,7 @@ import BackButton from '../components/BackButton';
 import Logo from '../components/Logo';
 import { Heart, ShoppingCart, Info } from 'lucide-react';
 import { toast } from 'sonner';
+import img1 from '../assets/images/07dbf7e6-8ea8-4f2f-a4a2-0812b188372e.png';
 
 // Mock de dados de produto
 const productMock = {
@@ -12,7 +13,7 @@ const productMock = {
   name: 'Ração Premium Cães Adultos',
   price: 89.90,
   rating: 4.5,
-  image: '/placeholder.svg',
+  image: img1,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   ingredients: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   specialistName: 'Nome do especialista',
