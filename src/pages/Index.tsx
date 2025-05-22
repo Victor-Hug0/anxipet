@@ -3,6 +3,8 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Play, Star, Package, ShoppingBag } from 'lucide-react';
 import Logo from '@/components/Logo';
+import { useAuth } from '../contexts/AuthContexts';
+import LogoutButton from '../components/LogoutButton';
 import { 
   Carousel,
   CarouselContent,
@@ -20,13 +22,20 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+import img1 from '../assets/images/07dbf7e6-8ea8-4f2f-a4a2-0812b188372e.png';
+import img2 from '../assets/images/4b4e868a-ef5b-482f-abf3-2fbc1458fdcd.png';
+import img3 from '../assets/images/63db2c7b-d951-4b2e-8ea6-c59e93ed603a.png';
+import img4 from '../assets/images/b30df7f8-b7ab-4d23-bda0-6c56fbbc3e9c.png';
+
+const images = [img1, img2, img3, img4];
+
 // Mock de dados de produtos
 const featuredProducts = Array.from({ length: 4 }).map((_, index) => ({
   id: index + 1,
   name: `Ração Premium Cães ${index + 1}`,
   price: 89.9 + index * 10,
   rating: 4.5,
-  image: '/placeholder.svg',
+  image: images[index],
   category: index % 2 === 0 ? 'cachorro' : 'gato',
 }));
 
@@ -72,6 +81,7 @@ const subscriptionPlans = [
 ];
 
 const Index = () => {
+  const { isAuthenticated } = useAuth();
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -81,25 +91,31 @@ const Index = () => {
             <Logo />
           </div>
           
-          <div className="flex gap-2">
-            <Link to="/login" className="text-xs text-primary hover:text-primary/80">Login</Link>
-            <div className="h-4 border-l border-primary/40 mx-1"></div>
-            <Link to="/cadastro" className="text-xs text-primary hover:text-primary/80">Cadastro</Link>
+          <div className="flex gap-2 items-center">
+            {isAuthenticated ? (
+              <LogoutButton />
+            ) : (
+              <>
+                <Link to="/login" className="text-xs text-primary hover:text-primary/80">Login</Link>
+                <div className="h-4 border-l border-primary/40 mx-1"></div>
+                <Link to="/cadastro" className="text-xs text-primary hover:text-primary/80">Cadastro</Link>
+              </>
+            )}
           </div>
         </div>
-        
-        <div className="mt-4 relative">
-          <input
-            type="search"
-            placeholder="Buscar produtos..."
-            className="w-full input-field pl-10"
-          />
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </div>
-      </header>
+    
+    <div className="mt-4 relative">
+      <input
+        type="search"
+        placeholder="Buscar produtos..."
+        className="w-full input-field pl-10"
+      />
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </div>
+  </header>
 
       {/* Hero Section */}
       <section className="bg-accent py-12">

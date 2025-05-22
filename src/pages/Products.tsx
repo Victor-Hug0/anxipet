@@ -3,6 +3,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Search, Filter, Star } from 'lucide-react';
 import Logo from '../components/Logo';
+import img1 from '../assets/images/07dbf7e6-8ea8-4f2f-a4a2-0812b188372e.png';
+import img2 from '../assets/images/4b4e868a-ef5b-482f-abf3-2fbc1458fdcd.png';
+import img3 from '../assets/images/63db2c7b-d951-4b2e-8ea6-c59e93ed603a.png';
+import img4 from '../assets/images/b30df7f8-b7ab-4d23-bda0-6c56fbbc3e9c.png';
+
+const images = [img1, img2, img3, img4];
 
 // Mock de dados de produtos
 const productsMock = Array.from({ length: 10 }).map((_, index) => ({
@@ -10,7 +16,7 @@ const productsMock = Array.from({ length: 10 }).map((_, index) => ({
   name: `Ração Premium Cães ${index + 1}`,
   price: 89.9 + index * 10,
   rating: 4.5,
-  image: '/placeholder.svg',
+  image: images[Math.floor(Math.random() * images.length)],
   category: index % 2 === 0 ? 'cachorro' : 'gato',
   brand: index % 3 === 0 ? 'AnxiPet' : 'PetPlus'
 }));
@@ -101,7 +107,7 @@ const Products = () => {
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="w-full h-32 object-contain p-2 bg-white/5"
+                className="w-full h-64 object-contain p-2 bg-white/5"
               />
               <div className="p-3">
                 <h3 className="text-sm font-medium line-clamp-2">{product.name}</h3>
